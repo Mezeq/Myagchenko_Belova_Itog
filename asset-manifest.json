@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Myagchenko_Belova_Itog/static/css/main.6f5bb1aa.css",
+    "main.js": "/Myagchenko_Belova_Itog/static/js/main.7ff376bf.js",
+    "index.html": "/Myagchenko_Belova_Itog/index.html",
+    "main.6f5bb1aa.css.map": "/Myagchenko_Belova_Itog/static/css/main.6f5bb1aa.css.map",
+    "main.7ff376bf.js.map": "/Myagchenko_Belova_Itog/static/js/main.7ff376bf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f5bb1aa.css",
+    "static/js/main.7ff376bf.js"
+  ]
+}
