@@ -1,12 +1,14 @@
 import React, { useEffect } from 'react';
-import Header from '.Components/Header';
-import Hero from '.Components/Hero';
-import HowItWorks from './components/HowItWorks';
-import Advantages from './components/Advantages';
-import Baskets from './components/Baskets';
-import Reviews from './components/Reviews';
-import FormsSection from './components/FormsSection';
-import Footer from './components/Footer';
+import {
+  Header,
+  Hero,
+  HowItWorks,
+  Advantages,
+  Baskets,
+  Reviews,
+  FormsSection,
+  Footer,
+} from './components';
 import './App.css';
 
 function App() {

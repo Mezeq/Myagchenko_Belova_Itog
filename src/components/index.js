@@ -1,0 +1,10 @@
+export { default as Header } from './Header';
+export { default as Hero } from './Hero';
+export { default as HowItWorks } from './HowItWorks';
+export { default as Advantages } from './Advantages';
+export { default as Baskets } from './Baskets';
+export { default as ContactForm } from './ContactForm';
+export { default as Footer } from './Footer';
+export { default as FormsSection } from './FormsSection';
+export { default as Reviews } from './Reviews';
+export { default as SubscriptionForm } from './SubscriptionForm';

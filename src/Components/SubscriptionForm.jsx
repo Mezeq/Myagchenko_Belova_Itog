@@ -50,7 +50,7 @@ const SubscriptionForm = () => {
     
     if (!formData.phone.trim()) {
       newErrors.phone = 'Телефон обязателен';
-    } else if (!/^[\d\s\-\+\(\)]+$/.test(formData.phone)) {
+    } else if (!/^[\d\s+\-()]+$/.test(formData.phone)) {
       newErrors.phone = 'Некорректный телефон';
     }
     
