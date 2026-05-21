@@ -1,59 +1,19 @@
-import React, { useEffect } from 'react';
-import {
-  Header,
-  Hero,
-  HowItWorks,
-  Advantages,
-  Baskets,
-  Reviews,
-  FormsSection,
-  Footer,
-} from './components';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import LoginPage from './pages/LoginPage';
+import AdminPage from './pages/AdminPage';
 import './App.css';
 
 function App() {
-  // Плавная прокрутка к якорям
-  useEffect(() => {
-    const smoothScroll = (e) => {
-      if (e.target.hash) {
-        e.preventDefault();
-        const targetId = e.target.getAttribute('href').slice(1);
-        const targetElement = document.getElementById(targetId);
-        
-        if (targetElement) {
-          window.scrollTo({
-            top: targetElement.offsetTop - 80,
-            behavior: 'smooth'
-          });
-        }
-      }
-    };
-
-    // Добавляем обработчики для всех ссылок с якорями
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', smoothScroll);
-    });
-
-    return () => {
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.removeEventListener('click', smoothScroll);
-      });
-    };
-  }, []);
-
   return (
-    <div className="App">
-      <Header />
-      <main>
-        <Hero />
-        <HowItWorks />
-        <Advantages />
-        <Baskets />
-        <Reviews />
-        <FormsSection />
-      </main>
-      <Footer />
-    </div>
+    <Router basename={process.env.PUBLIC_URL || ''}>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/admin" element={<AdminPage />} />
+      </Routes>
+    </Router>
   );
 }
 
